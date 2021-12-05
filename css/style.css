@@ -177,9 +177,10 @@ body {
 }
 
 .grid {
-  padding: 90px 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 60px;
 }
 
@@ -189,17 +190,15 @@ body {
   padding: 30px;
   gap: 30px;
 }
+.card__icon {
+  margin: 0 auto;
+}
 .card__text {
   text-align: center;
 }
 
-.caption__icon,
-.card__icon {
-  margin: 0 auto;
-}
-
 .button {
-  width: 120px;
+  width: 130px;
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -209,12 +208,14 @@ body {
   color: black;
   border: 1px solid #4aa6cb;
   box-shadow: 0 1px 4px rgba(55, 73, 87, 0.061), 0 5px 10px rgba(55, 73, 87, 0.1);
-  border-radius: 30px;
+  border-radius: 20px;
   display: block;
 }
 .button:hover {
+  color: white;
   background-color: #ffb007;
-  border: 1px solid #ffb007;
+  border: 1px solid white;
+  box-shadow: 0 1px 1px rgba(55, 73, 87, 0.315), 0 1px 3px rgba(55, 73, 87, 0.363);
 }
 
 .button--center {
