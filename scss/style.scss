@@ -22,7 +22,7 @@ $f-special: 'Cabin', sans-serif;
 
 
 $shadow: 0 1px 4px rgba(55, 73, 87, 0.061), 0 5px 5px rgba(55, 73, 87, 0.055);
-$shadow-secondary: 0 1px 1px rgba(55, 73, 87, 0.315), 0 1px 2px rgba(55, 73, 87, 0.363);
+$shadow-secondary: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
 $border: 1px solid white;
 
 // ----------------------------------------------------------------------------------------
@@ -70,6 +70,10 @@ a {
     color: $c-link;
 }
 
+a:hover {
+    color: $c-hover;
+}
+
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -81,6 +85,7 @@ a {
 .header {
     width: 100%;
     background-color: white;
+    opacity: 0.95;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +157,7 @@ a {
     
     &__link {
         text-decoration: none;
-        color: $c-secondary;
+        color: $c-primary;
         display: inline-block;
         padding: $spacer / 2;
     }
@@ -172,6 +177,8 @@ a {
     box-shadow: $shadow;
     border: $border;
     position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 
  
     
@@ -231,6 +238,7 @@ a {
         font-family: $f-special;
         line-height: 1;
         font-size: x-large;
+        color: black;
     }
 
 }
@@ -238,10 +246,8 @@ a {
 .hero-small::after {
     content: "";
     display: block;
-    // width: 100%;
     width: 10%;
     height: 2px;
-    // margin: 0 auto;
     background-color: $c-link;
     margin-top: $spacer;
 }
@@ -296,7 +302,7 @@ a {
     font-size: 14px;
     font-weight: bold;
     background-color: white;
-    color:black; 
+    color: $c-primary; 
     border: 1px solid $c-link;
     box-shadow: $shadow-secondary;
     border-radius: 20px;
@@ -323,7 +329,7 @@ a {
     
  
     &__title {
-        flex-basis: 10%;
+        flex-basis: 15%;
         text-align: right;
     }
 
@@ -367,14 +373,12 @@ a {
         color: $c-hover;
     }
 
-    
-
 }
 
 
 
-
 .footer {
+    width: 100%;
     color: white;
     text-align: center;
     padding-bottom: $spacer * 2;

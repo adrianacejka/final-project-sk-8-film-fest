@@ -35,6 +35,10 @@ a {
   color: #4aa6cb;
 }
 
+a:hover {
+  color: #ffb007;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,6 +50,7 @@ a {
 .header {
   width: 100%;
   background-color: white;
+  opacity: 0.95;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,7 +106,7 @@ a {
 }
 .menu__link {
   text-decoration: none;
-  color: #818181;
+  color: #464646;
   display: inline-block;
   padding: 15px;
 }
@@ -118,6 +123,8 @@ a {
   box-shadow: 0 1px 4px rgba(55, 73, 87, 0.061), 0 5px 5px rgba(55, 73, 87, 0.055);
   border: 1px solid white;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .hero__text {
   position: absolute;
@@ -165,6 +172,7 @@ a {
   font-family: "Cabin", sans-serif;
   line-height: 1;
   font-size: x-large;
+  color: black;
 }
 
 .hero-small::after {
@@ -219,9 +227,9 @@ a {
   font-size: 14px;
   font-weight: bold;
   background-color: white;
-  color: black;
+  color: #464646;
   border: 1px solid #4aa6cb;
-  box-shadow: 0 1px 1px rgba(55, 73, 87, 0.315), 0 1px 2px rgba(55, 73, 87, 0.363);
+  box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
   border-radius: 20px;
   display: block;
 }
@@ -229,7 +237,7 @@ a {
   color: white;
   background-color: #ffb007;
   border: 1px solid white;
-  box-shadow: 0 1px 1px rgba(55, 73, 87, 0.315), 0 1px 2px rgba(55, 73, 87, 0.363);
+  box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
 }
 .button--center {
   margin: 0 auto;
@@ -241,7 +249,7 @@ a {
   margin-top: 90px;
 }
 .film-card__title {
-  flex-basis: 10%;
+  flex-basis: 15%;
   text-align: right;
 }
 .film-card__image-container {
@@ -251,7 +259,7 @@ a {
   border-radius: 5px;
   border: 1px dashed black;
   padding: 10px;
-  box-shadow: 0 1px 1px rgba(55, 73, 87, 0.315), 0 1px 2px rgba(55, 73, 87, 0.363);
+  box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
 }
 .film-card__image-container:hover .film-card__image {
   transform: scale(0.97);
@@ -278,6 +286,7 @@ a {
 }
 
 .footer {
+  width: 100%;
   color: white;
   text-align: center;
   padding-bottom: 60px;
