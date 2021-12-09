@@ -1,0 +1,64 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    height: 500px;
+    background-color: white;
+    box-shadow: variables.$shadow;
+    border: variables.$border;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+
+ 
+    
+    
+    &__text {
+        position: absolute;
+        left: 0;
+        top: variables.$spacer;
+        padding: 0 variables.$spacer;  
+    }
+
+    &__date {
+        padding-bottom: variables.$spacer;
+        color: colors.$c-secondary;
+    }
+
+    &__title {
+        font-family: typo.$f-special;
+        color: black;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 0.9;
+        text-shadow: 5px 2px 15px rgb(255, 255, 255);
+    }
+
+ 
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: 2px;
+        color: colors.$c-secondary;
+        text-shadow: 5px 2px 20px rgb(255, 255, 255);
+        padding-top: variables.$spacer * 1.5;
+        
+    }
+
+    &__image-container {
+        max-width: 750px;
+    }
+  
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: variables.$shadow;
+    }
+ 
+}

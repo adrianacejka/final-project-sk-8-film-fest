@@ -1,0 +1,57 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+.film-card {
+    display: flex;
+    gap: variables.$spacer;
+    margin-top: variables.$spacer * 3;
+    
+ 
+    &__title {
+        flex-basis: 15%;
+        text-align: right;
+    }
+
+    &__image-container {
+        height: 180px;  
+        flex-basis: 25%;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 1px dashed black;
+        padding: variables.$spacer / 3;
+        box-shadow: variables.$shadow-secondary;
+    }
+
+
+    &__image-container:hover {
+        transform: scale(0.97);
+        transition-duration: 0.4s;
+        
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &__description {
+        flex-basis: 50%;
+        margin-left: variables.$spacer;
+        margin-right: variables.$spacer;
+    }
+
+    &__button {
+        align-self: center;
+        flex: 0 0 auto;
+        
+
+    }
+
+    &__link:hover {
+        color: colors.$c-hover;
+    }
+
+}

@@ -1,0 +1,28 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+.main {
+    margin-top: variables.$spacer * 3;
+    margin-bottom: variables.$spacer * 3;
+}
+
+
+
+.description {
+    max-width: 800px;
+    font-size: 22px;
+    padding: 0 variables.$spacer * 2;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.grid { 
+    display: grid; 
+    padding-top: variables.$spacer * 3;
+    padding-bottom: variables.$spacer * 3;
+    grid-template-columns: repeat(3, 1fr);
+    gap: variables.$spacer;
+}
+

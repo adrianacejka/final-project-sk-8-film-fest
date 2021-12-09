@@ -1,0 +1,19 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: variables.$spacer;
+    gap: variables.$spacer;
+
+    &__icon {
+        margin: 0 auto;       
+    }
+
+    &__text {
+        text-align: center;
+    }
+}

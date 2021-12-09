@@ -1,0 +1,31 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+.button {
+    width: 130px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    color: colors.$c-primary; 
+    border: 1px solid colors.$c-link;
+    box-shadow: variables.$shadow-secondary;
+    border-radius: 20px;
+    display: block;
+
+    &:hover {
+        color: white;
+        background-color: colors.$c-hover; 
+        border: 1px solid white;
+        box-shadow: variables.$shadow-secondary;
+    }
+
+    &--center {
+        margin: 0 auto;
+    }
+
+}

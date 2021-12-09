@@ -1,0 +1,27 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+.hero-small {
+    height: 120px;
+    background-color: white;
+
+    &__title {
+        font-family: typo.$f-special;
+        line-height: 1;
+        font-size: x-large;
+        color: black;
+    }
+
+
+}
+
+.hero-small::after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 2px;
+    background-color: colors.$c-link;
+    margin-top: variables.$spacer;
+}

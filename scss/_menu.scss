@@ -1,0 +1,30 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+.menu {
+    background-color: white; 
+    flex: 1 0 auto;
+    
+    
+    &__list {
+        display: flex;
+        justify-content: flex-end;     
+    }
+    
+    &__item {
+        list-style: none;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: colors.$c-primary;
+        display: inline-block;
+        padding: variables.$spacer / 2;
+    }
+
+    &__link:hover {
+        color: colors.$c-hover;
+    }
+
+}

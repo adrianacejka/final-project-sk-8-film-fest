@@ -1,0 +1,39 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+box-sizing: inherit;
+padding: 0;
+margin: 0;
+}
+
+body {
+    font-family: typo.$f-primary-2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: colors.$c-primary;
+}
+
+a {
+    color: colors.$c-link;
+}
+
+a:hover {
+    color: colors.$c-hover;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: variables.$spacer * 3;
+    padding-left: variables.$spacer * 2;
+    padding-right: variables.$spacer * 2;
+}
