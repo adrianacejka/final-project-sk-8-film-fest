@@ -1,0 +1,54 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+
+.card-contact {
+    text-align: center;
+
+
+    &__image {
+        width: 200px;
+        height: 200px;
+        // object-fit: cover;
+        border-radius: 5px;
+        border: 1px dashed black;
+        padding: variables.$spacer / 3;
+        box-shadow: variables.$shadow-secondary;
+        
+    }
+
+    &__phone,
+    &__email {
+        display: block;
+        color: colors.$c-secondary;
+        
+    }
+
+    &__phone::before,
+    &__email::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        left: 0;
+        bottom: -5px;
+              
+    }
+
+    &__phone::before {
+        background-image: url("/images/call_black_24dp.svg");
+        background-size: cover;
+        
+    }
+
+    &__email::before {
+        background-image: url("/images/email_black_24dp.svg");
+        background-size: cover;
+    }
+    
+
+}
