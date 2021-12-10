@@ -20,10 +20,12 @@ body {
     line-height: 1.5;
     letter-spacing: 1px;
     color: colors.$c-primary;
+    
 }
 
 a {
     color: colors.$c-link;
+    text-decoration: none;
 }
 
 a:hover {
@@ -34,6 +36,19 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: variables.$spacer * 3;
-    padding-left: variables.$spacer * 2;
-    padding-right: variables.$spacer * 2;
+    padding-left: variables.$spacer * 3;
+    padding-right: variables.$spacer * 3;
+    
+    
+    
+}
+
+.wave-container {
+    height: 100px; 
+    background-image: url(/images/vlna.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    // position: sticky;
+    // right: 0;
+    // bottom: 0;
 }

@@ -3,23 +3,43 @@
 @use 'variables';
 
 .menu {
-    background-color: white; 
+    background-color: white;
     flex: 1 0 auto;
-    
-    
+
+
     &__list {
         display: flex;
-        justify-content: flex-end;     
+        justify-content: flex-end;
     }
-    
+
     &__item {
         list-style: none;
+        position: relative;
     }
-    
+
+    &__item:hover .menu__submenu {
+        display: block;
+
+    }
+
+    &__submenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        // background-color: yellow;
+
+    }
+
+    &__item--sub {
+        border-bottom: 1px dashed colors.$c-primary;
+        
+    }
+
     &__link {
         text-decoration: none;
         color: colors.$c-primary;
-        display: inline-block;
+        display: block;
         padding: variables.$spacer / 2;
     }
 

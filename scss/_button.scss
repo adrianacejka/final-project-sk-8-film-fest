@@ -3,7 +3,7 @@
 @use 'variables';
 
 .button {
-    width: 130px;
+    width: 120px;
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -14,14 +14,18 @@
     color: colors.$c-primary; 
     border: 1px solid colors.$c-link;
     box-shadow: variables.$shadow-secondary;
-    border-radius: 20px;
+    border-radius: 15px;
     display: block;
 
     &:hover {
-        color: white;
-        background-color: colors.$c-hover; 
-        border: 1px solid white;
-        box-shadow: variables.$shadow-secondary;
+        // color: white;
+        // background-color: colors.$c-hover; 
+        // border: 1px solid white;
+        // box-shadow: variables.$shadow-secondary;  
+        transform: scale(0.9);
+        transition-duration: 0.4s;
+        transition-timing-function: ease-out;
+        color: colors.$c-primary;
     }
 
     &--center {

@@ -27,6 +27,7 @@
     &__image-container:hover {
         transform: scale(0.97);
         transition-duration: 0.4s;
+        transition-timing-function: ease-out;
         
     }
 
@@ -39,15 +40,13 @@
 
     &__description {
         flex-basis: 50%;
-        margin-left: variables.$spacer;
-        margin-right: variables.$spacer;
+        // margin-left: variables.$spacer;
+        // margin-right: variables.$spacer;
     }
 
     &__button {
-        align-self: center;
+        align-self: flex-start;
         flex: 0 0 auto;
-        
-
     }
 
     &__link:hover {

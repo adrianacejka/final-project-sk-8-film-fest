@@ -23,6 +23,6 @@
     padding-top: variables.$spacer * 3;
     padding-bottom: variables.$spacer * 3;
     grid-template-columns: repeat(3, 1fr);
-    gap: variables.$spacer;
+    gap: variables.$spacer * 2;
 }
 
