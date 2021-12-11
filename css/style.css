@@ -397,15 +397,6 @@ a:hover {
      object-position: bottom;
 }
 
-/*
-fonty
----------------
-font-family: 'Cabin', sans-serif;  ................header, var.2
-font-family: 'Cabin Sketch', cursive; ............ header
-font-family: 'Cairo', sans-serif; ................ body - titulky - primary-2
-font-family: 'Open Sans', sans-serif; .............body
-font-family: 'Oswald', sans-serif; ................h1 - h5
-*/
 .program-day {
   padding: 30px;
 }
@@ -450,4 +441,28 @@ td {
 
 .button--program {
   display: inline-block;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.film-trailer-container {
+  padding: 30px;
+  display: flex;
+  gap: 60px;
+  margin: 30px auto;
+}
+.film-trailer-container__box {
+  max-width: 450px;
+}
+
+.film-detail__title {
+  color: #86b4ab;
+}
+
+/*
+fonty
+---------------
+font-family: 'Cabin', sans-serif;  ................header, var.2
+font-family: 'Cabin Sketch', cursive; ............ header
+font-family: 'Cairo', sans-serif; ................ body - titulky - primary-2
+font-family: 'Open Sans', sans-serif; .............body
+font-family: 'Oswald', sans-serif; ................h1 - h5
+*//*# sourceMappingURL=style.css.map */

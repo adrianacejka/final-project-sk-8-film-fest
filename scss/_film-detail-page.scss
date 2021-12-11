@@ -1,0 +1,26 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+
+.film-trailer-container {
+    padding: variables.$spacer;
+    display: flex;
+    gap: variables.$spacer * 2;
+    margin: variables.$spacer auto;
+
+    &__box {
+        max-width: 450px;
+    }
+
+
+
+
+.film-detail__title {
+    color: colors.$c-link;
+}
+
+.button--detail-film {
+    margin-bottom: 50px;
+}

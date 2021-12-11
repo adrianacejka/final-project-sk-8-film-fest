@@ -15,6 +15,8 @@
 @use 'footer';
 @use 'card-contact';
 @use 'card-guest';
+@use 'program-page';
+@use 'film-detail-page';
 
 
 
@@ -28,68 +30,6 @@ font-family: 'Open Sans', sans-serif; .............body
 font-family: 'Oswald', sans-serif; ................h1 - h5
 */
 
-.program-day {
-    padding: variables.$spacer;
 
-}
 
-.program-table {
-    width: 100%;
-    // border-collapse: collapse;
-    // padding-left: variables.$spacer;
-    // padding-right: variables.$spacer;
-    margin: variables.$spacer * 2 auto;
-    border-collapse: separate;
-    border-spacing: 15px 15px;
 
-    &__rezervace {
-        border: none;
-        box-shadow: none;
-    }
-
-    &__film-des {
-        font-size: smaller;
-    }
-
-    &__time {
-        text-align: center;
-        font-weight: bolder;
-    }
-
-}
-
-td {
-    padding: variables.$spacer / 3;
-    // border: 1px dashed colors.$c-link;
-    border-radius: 5px;
-    box-shadow: variables.$shadow-secondary;
-}
-
-.film-card__title--table {
-    text-align: left;
-}
-
-// .program-day::after {
-//     content: "";
-//     display: block;
-//     width: 10%;
-//     height: 2px;
-//     background-color: colors.$c-link;
-//     // margin-top: variables.$spacer / 3;
-// }
-
-.program-day {
-    background-color: colors.$c-hover;
-    display: inline-block;
-    border-radius: 5px;
-    // border-bottom: 1px dashed colors.$c-secondary;
-    // border: 1px dashed colors.$c-hover;
-}
-
-.filmovy-program {
-    margin-bottom: variables.$spacer * 2;
-}
-
-.button--program {
-    display: inline-block;   
-}

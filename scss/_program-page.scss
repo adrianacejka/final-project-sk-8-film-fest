@@ -1,0 +1,62 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+
+.program-day {
+    padding: variables.$spacer;
+
+}
+
+.program-table {
+    width: 100%;
+    // border-collapse: collapse;
+    // padding-left: variables.$spacer;
+    // padding-right: variables.$spacer;
+    margin: variables.$spacer * 2 auto;
+    border-collapse: separate;
+    border-spacing: 15px 15px;
+
+    &__rezervace {
+        border: none;
+        box-shadow: none;
+    }
+
+    &__film-des {
+        font-size: smaller;
+    }
+
+    &__time {
+        text-align: center;
+        font-weight: bolder;
+    }
+
+}
+
+td {
+    padding: variables.$spacer / 3;
+    // border: 1px dashed colors.$c-link;
+    border-radius: 5px;
+    box-shadow: variables.$shadow-secondary;
+}
+
+.film-card__title--table {
+    text-align: left;
+}
+
+
+.program-day {
+    background-color: colors.$c-hover;
+    display: inline-block;
+    border-radius: 5px;
+    
+}
+
+.filmovy-program {
+    margin-bottom: variables.$spacer * 2;
+}
+
+.button--program {
+    display: inline-block;   
+}
