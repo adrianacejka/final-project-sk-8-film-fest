@@ -1,0 +1,40 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+
+.card-guest__image-container {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px dashed black;
+    padding: variables.$spacer / 3;
+    box-shadow: variables.$shadow-secondary;
+    
+}
+
+.card-guest__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.card-guest__text,
+.card-guest__name {
+    padding: variables.$spacer 0;  
+}
+
+.image-guest-2 {
+    object-position: 65% 50%;
+}
+
+.image-guest-1 {
+    object-position: 65% 90%;
+}
+
+.image-guest-3 {
+    object-position: bottom;
+}

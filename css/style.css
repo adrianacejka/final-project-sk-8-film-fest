@@ -211,6 +211,15 @@ a:hover {
   padding-top: 90px;
   padding-bottom: 90px;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 60px;
+}
+
+.grid-4col {
+  display: grid;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  grid-template-columns: repeat(4, 1fr);
   gap: 60px;
 }
 
@@ -243,7 +252,7 @@ a:hover {
   display: block;
 }
 .button:hover {
-  transform: scale(0.9);
+  transform: scale(0.96);
   transition-duration: 0.4s;
   transition-timing-function: ease-out;
   color: #464646;
@@ -313,13 +322,20 @@ a:hover {
 .card-contact {
   text-align: center;
 }
-.card-contact__image {
+.card-contact__image-container {
   width: 200px;
   height: 200px;
-  border-radius: 5px;
-  border: 1px dashed black;
   padding: 10px;
+  border: 1px dashed black;
+  border-radius: 5px;
   box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
+}
+.card-contact__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }
 .card-contact__phone, .card-contact__email {
   display: block;
@@ -344,6 +360,43 @@ a:hover {
   background-size: cover;
 }
 
+.card-guest__image-container {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px dashed black;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
+}
+
+.card-guest__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-guest__text,
+.card-guest__name {
+  padding: 30px 0;
+}
+
+.image-guest-2 {
+  -o-object-position: 65% 50%;
+     object-position: 65% 50%;
+}
+
+.image-guest-1 {
+  -o-object-position: 65% 90%;
+     object-position: 65% 90%;
+}
+
+.image-guest-3 {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 /*
 fonty
 ---------------
@@ -352,4 +405,49 @@ font-family: 'Cabin Sketch', cursive; ............ header
 font-family: 'Cairo', sans-serif; ................ body - titulky - primary-2
 font-family: 'Open Sans', sans-serif; .............body
 font-family: 'Oswald', sans-serif; ................h1 - h5
-*//*# sourceMappingURL=style.css.map */
+*/
+.program-day {
+  padding: 30px;
+}
+
+.program-table {
+  width: 100%;
+  margin: 60px auto;
+  border-collapse: separate;
+  border-spacing: 15px 15px;
+}
+.program-table__rezervace {
+  border: none;
+  box-shadow: none;
+}
+.program-table__film-des {
+  font-size: smaller;
+}
+.program-table__time {
+  text-align: center;
+  font-weight: bolder;
+}
+
+td {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
+}
+
+.film-card__title--table {
+  text-align: left;
+}
+
+.program-day {
+  background-color: #ffb007;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.filmovy-program {
+  margin-bottom: 60px;
+}
+
+.button--program {
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */

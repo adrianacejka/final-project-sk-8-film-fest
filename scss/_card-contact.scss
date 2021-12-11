@@ -7,16 +7,21 @@
 .card-contact {
     text-align: center;
 
-
-    &__image {
+    &__image-container {
         width: 200px;
         height: 200px;
-        // object-fit: cover;
-        border-radius: 5px;
-        border: 1px dashed black;
         padding: variables.$spacer / 3;
+        border: 1px dashed black;
+        border-radius: 5px;
         box-shadow: variables.$shadow-secondary;
-        
+    }
+
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
     }
 
     &__phone,
