@@ -30,6 +30,48 @@ font-family: 'Open Sans', sans-serif; .............body
 font-family: 'Oswald', sans-serif; ................h1 - h5
 */
 
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+    // font-size: larger;
+
+    
+}
+
+.reservation {
+    max-width: 50%;
+    margin: variables.$spacer * 2 auto 0 auto;
+}
+
+label {
+    margin-top: variables.$spacer / 2;
+    }
+
+input,
+select {
+    padding: 10px;
+    font-size: typo.$f-primary-2;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: 0;
+    border: 1px dashed colors.$c-primary;
+    border-radius: 5px;
+    box-shadow: variables.$shadow-secondary;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+input:focus,
+select:focus {
+    outline: 0;
+    border: 2px solid colors.$c-hover;
+    background-color: white;
+    border-radius: 5px;
+}
 
 
 
+
+// 2px solid colors.$c-link
