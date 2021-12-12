@@ -1,0 +1,58 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+label,
+input,
+select {
+    display: block;
+    width: 100%;
+}
+
+.reservation {
+    max-width: 50%;
+    margin: variables.$spacer * 2 auto 0 auto;
+}
+
+label {
+    margin-top: variables.$spacer / 2;
+    }
+
+input,
+select {
+    padding: 10px;
+    font-size: typo.$f-primary-2;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: 0;
+    border: 1px dashed colors.$c-primary;
+    border-radius: 5px;
+    box-shadow: variables.$shadow-secondary;
+    background-color: rgb(241, 241, 241);
+    
+}
+
+input:focus,
+select:focus {
+    outline: 0;
+    border: 2px solid colors.$c-hover;
+    background-color: white;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 130px;
+    margin: variables.$spacer auto;
+    padding: 10px;
+    box-shadow: variables.$shadow-secondary;
+    outline: 0;
+    font-family: typo.$f-primary-2;
+    font-size: 16px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    border: 1px dashed colors.$c-primary;
+    text-transform: uppercase;
+
+}

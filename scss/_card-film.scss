@@ -40,12 +40,12 @@
 
     &__description {
         flex-basis: 50%;
-        // margin-left: variables.$spacer;
-        // margin-right: variables.$spacer;
+        margin-left: variables.$spacer;
+        margin-right: variables.$spacer;
     }
 
     &__button {
-        align-self: flex-start;
+        align-self: center;
         flex: 0 0 auto;
     }
 
