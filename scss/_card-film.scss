@@ -14,6 +14,7 @@
     }
 
     &__image-container {
+        width: 100%;
         height: 180px;  
         flex-basis: 25%;
         overflow: hidden;
@@ -41,12 +42,11 @@
     &__description {
         flex-basis: 50%;
         margin-left: variables.$spacer;
-        margin-right: variables.$spacer;
+        
     }
 
     &__button {
-        align-self: center;
-        flex: 0 0 auto;
+        align-self: flex-end;
     }
 
     &__link:hover {

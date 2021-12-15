@@ -10,14 +10,24 @@
     gap: variables.$spacer * 2;
     margin: variables.$spacer auto;
 
-    &__box {
-        max-width: 450px;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
     }
 
 
+    &__box {
+        max-width: 450px;
+
+        @media screen and (max-width: 1000px) {
+            margin: 0 auto;
+        }
+
+    }
 }
 
 
 .film-detail__title {
     color: colors.$c-link;
 }
+
+

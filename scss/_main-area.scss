@@ -25,6 +25,13 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: variables.$spacer * 2;
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        padding-left: variables.$spacer * 3;
+        padding-right: variables.$spacer * 3;
+        padding-bottom: 0;
+    }
 }
 
 .grid-4col {
@@ -33,4 +40,32 @@
     padding-bottom: variables.$spacer * 3;
     grid-template-columns: repeat(4, 1fr);
     gap: variables.$spacer * 2;
+}
+
+.grid-guest {
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: variables.$spacer * 2;
+        padding-right: variables.$spacer * 2;
+    }
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+        padding-left: variables.$spacer;
+        padding-right: variables.$spacer;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.grid-home {
+    @media screen and (max-width: 650px) {
+        padding-left: variables.$spacer;
+        padding-right: variables.$spacer;
+        padding-bottom: 0;
+    }
 }

@@ -6,7 +6,7 @@
     background-color: white;
     flex: 1 0 auto;
 
-
+    
     &__list {
         display: flex;
         justify-content: flex-end;
@@ -48,4 +48,29 @@
         color: colors.$c-hover;
     }
 
+    &__checkbox {
+        position: absolute;
+        left: -9999px;
+    }
+    
+    
+    &__toggler {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 1200px) {
+        
+    }
+
+
+
+
+    
+
+
 }
+
+
+
+

@@ -19,6 +19,7 @@
 @use 'film-detail-page';
 @use 'reservation';
 @use 'warning';
+@use 'animace';
 
 
 
@@ -32,18 +33,11 @@ font-family: 'Open Sans', sans-serif; .............body
 font-family: 'Oswald', sans-serif; ................h1 - h5
 */
 
-.about-animace-start {
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    left: 45%;
-    top: 0;
-}
 
-.about-animace-end {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 45%;
-    top: 20%;
-}
+// @media screen and (max-width: 1200px) {
+
+// }
+
+// @media screen and (max-width: 1100px) {
+
+// }

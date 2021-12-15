@@ -1,0 +1,29 @@
+@use 'colors';
+@use 'typo';
+@use 'variables';
+
+
+.about-animace {
+    width: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+
+}
+
+
+@keyframes pohyb {
+    0% { transform: translate(0,0);}  
+    10% { transform: rotate(60deg);}   
+    30% { transform: translate(-120px,200px);}
+    100% { transform: translate(-1200px,300px);}
+
+}   
+
+.about-animace {
+    animation: pohyb 4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}

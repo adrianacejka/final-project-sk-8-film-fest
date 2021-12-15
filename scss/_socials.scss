@@ -17,4 +17,44 @@
         display: block;
     }
 
+
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+        
+
+    }
+
+}
+
+.socials-bottom {
+
+    display: none;
+
+    &__icon {
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-right: variables.$spacer;
+   
+    }
+
+   @media screen and (max-width: 1200px) {
+        position: relative;
+        display: inline-block;
+        top: variables.$spacer * 3;
+        left: 42%;
+    
+    }
+    
+
+    @media screen and (max-width: 600px) {
+        position: relative;
+        display: inline-block;
+        top: variables.$spacer * 3;
+        left: 30%;
+    
+    }
+
 }

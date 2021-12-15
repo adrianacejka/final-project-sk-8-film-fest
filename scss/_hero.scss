@@ -21,7 +21,13 @@
         position: absolute;
         left: 0;
         top: variables.$spacer;
-        padding: 0 variables.$spacer;  
+        padding: 0 variables.$spacer; 
+        
+        @media screen and (max-width: 950px) {
+            top: variables.$spacer * 3;
+        }
+
+
     }
 
     &__date {
@@ -33,9 +39,13 @@
         font-family: typo.$f-special;
         color: black;
         font-weight: 700;
-        font-size: 50px;
+        font-size: 55px;
         line-height: 0.9;
         text-shadow: 5px 2px 15px rgb(255, 255, 255);
+
+        @media screen and (max-width: 950px) {
+            font-size: 50px;
+        }
     }
 
  
@@ -47,11 +57,19 @@
         color: colors.$c-secondary;
         text-shadow: 5px 2px 20px rgb(255, 255, 255);
         padding-top: variables.$spacer * 1.5;
+
+        @media screen and (max-width: 1120px) {
+            display: none;
+        }
         
     }
 
     &__image-container {
         max-width: 650px;
+
+        @media screen and (max-width: 1020px) {
+            max-width: 100%;
+        }
     }
   
     &__image {
