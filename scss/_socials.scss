@@ -38,7 +38,7 @@
 
    @media screen and (max-width: 1200px) {
         position: relative;
-        display: block;
+        display: inline-block;
         top: variables.$spacer * 3;
         left: 42%;
     
@@ -47,7 +47,7 @@
 
     @media screen and (max-width: 600px) {
         position: relative;
-        display: block;
+        display: inline-block;
         top: variables.$spacer * 3;
         left: 30%;
     

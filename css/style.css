@@ -60,11 +60,10 @@ a:hover {
 }
 
 .header {
-  width: 100%;
+  margin: 0 auto;
   background-color: white;
   opacity: 0.95;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   z-index: 999;
   position: fixed;
@@ -136,7 +135,7 @@ a:hover {
 @media screen and (max-width: 1200px) {
   .socials-bottom {
     position: relative;
-    display: block;
+    display: inline-block;
     top: 90px;
     left: 42%;
   }
@@ -144,7 +143,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   .socials-bottom {
     position: relative;
-    display: block;
+    display: inline-block;
     top: 90px;
     left: 30%;
   }
@@ -198,7 +197,7 @@ a:hover {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    top: -10px;
+    top: -15px;
     left: 90%;
     z-index: 99999;
     font-size: 30px;
