@@ -891,4 +891,9 @@ button {
           animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.wave-container {
+  position: relative;
+  bottom: -3px;
 }/*# sourceMappingURL=style.css.map */
