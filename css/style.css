@@ -245,7 +245,7 @@ a:hover {
 }
 @media screen and (max-width: 950px) {
   .hero__text {
-    top: 90px;
+    top: 30px;
   }
 }
 .hero__date {
