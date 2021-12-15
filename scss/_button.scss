@@ -19,10 +19,8 @@
     &:hover { 
         transform: scale(0.96);
         transition-duration: 0.5s;
-        // transition-timing-function: ease-out;
         background-color: colors.$c-hover;
         color: white;
-        // color: colors.$c-primary;
         border: 1px solid colors.$c-hover;
     }
 

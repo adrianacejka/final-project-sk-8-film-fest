@@ -17,12 +17,8 @@
         display: block;
     }
 
-
-
     @media screen and (max-width: 1200px) {
         display: none;
-        
-
     }
 
 }
@@ -42,7 +38,7 @@
 
    @media screen and (max-width: 1200px) {
         position: relative;
-        display: inline-block;
+        display: block;
         top: variables.$spacer * 3;
         left: 42%;
     
@@ -51,7 +47,7 @@
 
     @media screen and (max-width: 600px) {
         position: relative;
-        display: inline-block;
+        display: block;
         top: variables.$spacer * 3;
         left: 30%;
     

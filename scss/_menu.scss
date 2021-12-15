@@ -6,7 +6,7 @@
     background-color: white;
     flex: 1 0 auto;
 
-    
+
     &__list {
         display: flex;
         justify-content: flex-end;
@@ -34,7 +34,7 @@
 
     &__item--sub {
         border-bottom: 1px dashed colors.$c-primary;
-        
+
     }
 
     &__link {
@@ -48,28 +48,57 @@
         color: colors.$c-hover;
     }
 
+
     &__checkbox {
         position: absolute;
         left: -9999px;
     }
-    
-    
+
     &__toggler {
         display: none;
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .menu__toggler {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: -10px;
+        left: 90%;
+        z-index: 99999;
+        font-size: 30px;
+
     }
 
+    .menu__submenu {
+        position: relative;
+    }
 
-    @media screen and (max-width: 1200px) {
+    .menu__list { 
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .menu__checkbox:checked ~ .menu__list {
+        display: block;
+        background-color: white;
         
     }
 
-
-
-
+    .menu__link {
+        border-bottom: 1px dashed colors.$c-primary;
+        background-color: black;
+        color: whitesmoke;
     
-
+    }
 
 }
+
 
 
 

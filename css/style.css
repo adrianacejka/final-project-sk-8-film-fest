@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #86b4ab;
+  color: #347679;
   text-decoration: none;
 }
 
@@ -72,11 +72,24 @@ a:hover {
   padding: 0 30px;
   border-bottom: 1px dashed;
 }
+@media screen and (max-width: 700px) {
+  .header {
+    height: 60px;
+    border-bottom: 0;
+  }
+}
 
 .logo {
   display: flex;
   align-items: center;
   padding-left: 0;
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    align-self: flex-start;
+    padding-top: 15px;
+    padding-right: 15px;
+  }
 }
 .logo__link {
   font-family: "Cabin", sans-serif;
@@ -123,7 +136,7 @@ a:hover {
 @media screen and (max-width: 1200px) {
   .socials-bottom {
     position: relative;
-    display: inline-block;
+    display: block;
     top: 90px;
     left: 42%;
   }
@@ -131,7 +144,7 @@ a:hover {
 @media screen and (max-width: 600px) {
   .socials-bottom {
     position: relative;
-    display: inline-block;
+    display: block;
     top: 90px;
     left: 30%;
   }
@@ -178,6 +191,40 @@ a:hover {
 }
 .menu__toggler {
   display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .menu__toggler {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    left: 90%;
+    z-index: 99999;
+    font-size: 30px;
+  }
+
+  .menu__submenu {
+    position: relative;
+  }
+
+  .menu__list {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+    background-color: white;
+  }
+
+  .menu__link {
+    border-bottom: 1px dashed #464646;
+    background-color: black;
+    color: whitesmoke;
+  }
 }
 .hero {
   display: flex;
@@ -265,7 +312,7 @@ a:hover {
   display: block;
   width: 10%;
   height: 2px;
-  background-color: #86b4ab;
+  background-color: #347679;
   margin-top: 30px;
 }
 
@@ -394,7 +441,7 @@ a:hover {
   font-weight: bold;
   background-color: white;
   color: #464646;
-  border: 1px solid #86b4ab;
+  border: 1px solid #347679;
   box-shadow: 0 1px 2px rgba(55, 73, 87, 0.157), 0 2px 4px rgba(55, 73, 87, 0.178);
   border-radius: 15px;
   display: block;
@@ -514,7 +561,7 @@ a:hover {
 }
 .footer__link {
   text-decoration: none;
-  color: #86b4ab;
+  color: #347679;
 }
 
 .card-contact {
@@ -703,7 +750,7 @@ td {
 }
 
 .film-detail__title {
-  color: #86b4ab;
+  color: #347679;
 }
 
 @media screen and (max-width: 1000px) {
@@ -845,14 +892,4 @@ button {
           animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-/*
-fonty
----------------
-font-family: 'Cabin', sans-serif;  ................header, var.2
-font-family: 'Cabin Sketch', cursive; ............ header
-font-family: 'Cairo', sans-serif; ................ body - titulky - primary-2
-font-family: 'Open Sans', sans-serif; .............body
-font-family: 'Oswald', sans-serif; ................h1 - h5
-*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

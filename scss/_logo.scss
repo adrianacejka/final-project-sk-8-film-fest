@@ -6,6 +6,12 @@
     display: flex;
     align-items: center;
     padding-left: 0;
+
+    @media screen and (max-width: 700px) {
+        align-self: flex-start;
+        padding-top: variables.$spacer / 2;
+        padding-right: variables.$spacer / 2;
+    }
     
 
     &__link {
