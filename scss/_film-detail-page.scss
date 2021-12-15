@@ -11,16 +11,18 @@
     margin: variables.$spacer auto;
 
     @media screen and (max-width: 1000px) {
-        flex-direction: column;
+        display: block;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 5px;
     }
 
 
     &__box {
         max-width: 450px;
 
-        @media screen and (max-width: 1000px) {
-            margin: 0 auto;
-        }
+       
 
     }
 }
@@ -28,6 +30,12 @@
 
 .film-detail__title {
     color: colors.$c-link;
+}
+
+.film-detail__text {
+    @media screen and (max-width: 1000px) {
+        margin-top: variables.$spacer;
+    }
 }
 
 

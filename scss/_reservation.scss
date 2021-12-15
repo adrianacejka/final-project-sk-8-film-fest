@@ -13,6 +13,14 @@ select {
 .reservation {
     max-width: 50%;
     margin: variables.$spacer * 2 auto 0 auto;
+
+    @media screen and (max-width: 700px) {
+        max-width: 70%;
+    }
+
+    @media screen and (max-width: 400px) {
+        max-width: 90%;
+    }
 }
 
 label {

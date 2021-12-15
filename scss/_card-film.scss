@@ -6,11 +6,21 @@
     display: flex;
     gap: variables.$spacer;
     margin-top: variables.$spacer * 3;
+
+    @media screen and (max-width: 800px) {
+        display: block;
+    
+    }
     
  
     &__title {
         flex-basis: 15%;
         text-align: right;
+
+        @media screen and (max-width: 800px) {
+            text-align: center;
+        }
+
     }
 
     &__image-container {
@@ -22,6 +32,17 @@
         border: 1px dashed black;
         padding: variables.$spacer / 3;
         box-shadow: variables.$shadow-secondary;
+
+        @media screen and (max-width: 800px) {
+            max-width: 300px;
+            height: 220px;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 500px) {
+            width: 80%;
+            height: 220px;
+            margin: 0 auto;
+        }
     }
 
 
@@ -42,6 +63,10 @@
     &__description {
         flex-basis: 50%;
         margin-left: variables.$spacer;
+
+        @media screen and (max-width: 900px) {
+            margin-left: 0;
+        }
         
     }
 
@@ -53,4 +78,28 @@
         color: colors.$c-hover;
     }
 
+}
+
+.film-card * {
+
+    @media screen and (max-width: 800px) {
+        margin-bottom: variables.$spacer;
+        
+    }
+    
+}
+
+.film-card p {
+
+    @media screen and (max-width: 800px) {
+        padding-left: variables.$spacer * 3;
+        padding-right: variables.$spacer * 3;
+        
+    }
+    @media screen and (max-width: 600px) {
+        padding-left: 5px;
+        padding-right: 5px;
+        
+    }
+    
 }

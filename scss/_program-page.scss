@@ -11,12 +11,15 @@
 
 .program-table {
     width: 100%;
-    // border-collapse: collapse;
-    // padding-left: variables.$spacer;
-    // padding-right: variables.$spacer;
-    margin: variables.$spacer * 2 auto;
+    margin: variables.$spacer * 2 0;
     border-collapse: separate;
     border-spacing: 15px 15px;
+
+    @media screen and (max-width: 800px) {
+        border-spacing: 0 0;
+    }
+
+  
 
     &__rezervace {
         border: none;
@@ -36,9 +39,14 @@
 
 td {
     padding: variables.$spacer / 3;
-    // border: 1px dashed colors.$c-link;
     border-radius: 5px;
     box-shadow: variables.$shadow-secondary;
+
+    @media screen and (max-width: 500px) {
+        font-size: smaller;
+    }
+
+   
 }
 
 .film-card__title--table {
@@ -59,4 +67,17 @@ td {
 
 .button--program {
     display: inline-block;   
+      
+    
+    @media screen and (max-width: 800px) {
+        display: block;
+        padding: 3px;
+        width: 100px;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: smaller;
+        width: 80px;
+    }
+    
 }
