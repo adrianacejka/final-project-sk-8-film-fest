@@ -73,8 +73,9 @@ a:hover {
 }
 @media screen and (max-width: 700px) {
   .header {
-    height: 60px;
+    height: 40px;
     border-bottom: 0;
+    position: static;
   }
 }
 
@@ -198,9 +199,9 @@ a:hover {
     cursor: pointer;
     position: absolute;
     top: -15px;
-    left: 90%;
+    left: 85%;
     z-index: 99999;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .menu__submenu {
@@ -737,6 +738,7 @@ td {
 @media screen and (max-width: 1000px) {
   .film-trailer-container {
     display: block;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 400px) {
