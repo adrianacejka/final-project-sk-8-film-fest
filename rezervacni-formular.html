@@ -10,15 +10,15 @@ title: Rezervační formulář
 
 <form class="reservation" method="post" action="">
 
-    <label for="jmeno">Jméno</label>
+    <label class="field-description" for="jmeno">Jméno</label>
     <input type="text" name="jmeno" id="jmeno" autofocus required>
 
-    <label for="e-mail">E-mail</label>
+    <label class="field-description" for="e-mail">E-mail</label>
     <input type="text" name="e-mail" id="e-mail" required>
 
     
     
-    <label for="film">Film</label>
+    <label class="field-description" for="film">Film</label>
     <select name="film" id="film" required>
         <option value=""></option>
         <option value="">Saturdays, sobota, 13:00</option>
@@ -41,7 +41,7 @@ title: Rezervační formulář
         <option value="">Album, neděle, 21:30</option>
     </select><br>
 
-    <label for="pocet">Počet vstupenek</label>
+    <label class="field-description" for="pocet">Počet vstupenek</label>
     <input type="number" name="pocet" id="pocet" min="1" max="10" required>
 
     <button class="submit" type="submit" name="tlacitko"><a class="tlacitko-rezervace" href="/rezervace-hlaska/">odeslat</a></button>

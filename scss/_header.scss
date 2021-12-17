@@ -8,17 +8,15 @@
     background-color: white;
     opacity: 0.95;
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     z-index: 999;
     position: fixed;
     width: 100%;
     padding: 0 variables.$spacer;
-    border-bottom: 1px dashed;
+    border-bottom: 1px dashed colors.$c-primary;
 
     @media screen and (max-width: 700px) {
-        height: 40px;
-        border-bottom: 0;
         position: relative;
         z-index: 9999;
     }

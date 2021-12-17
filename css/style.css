@@ -47,7 +47,7 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   .wrapper {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -65,17 +65,16 @@ a:hover {
   background-color: white;
   opacity: 0.95;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   z-index: 999;
   position: fixed;
   width: 100%;
   padding: 0 30px;
-  border-bottom: 1px dashed;
+  border-bottom: 1px dashed #464646;
 }
 @media screen and (max-width: 700px) {
   .header {
-    height: 40px;
-    border-bottom: 0;
     position: relative;
     z-index: 9999;
   }
@@ -196,14 +195,14 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
+  .menu {
+    flex: 0 0 auto;
+  }
+
   .menu__toggler {
     display: inline-block;
     cursor: pointer;
-    position: absolute;
-    top: -8px;
-    left: 85%;
-    z-index: 99999;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .menu__submenu {
@@ -220,11 +219,14 @@ a:hover {
   .menu__checkbox:checked ~ .menu__list {
     display: block;
     background-color: white;
+    top: 47px;
+    right: 0;
   }
 
   .menu__link {
     border-bottom: 1px dashed #464646;
     background-color: black;
+    opacity: 0.95;
     color: whitesmoke;
   }
 }
@@ -785,7 +787,7 @@ select {
   }
 }
 
-label {
+.field-description {
   margin-top: 15px;
 }
 

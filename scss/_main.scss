@@ -19,8 +19,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 1px;
-    color: colors.$c-primary;
-    
+    color: colors.$c-primary;  
 }
 
 a {
@@ -50,7 +49,7 @@ a:hover {
     } 
 
     @media screen and (max-width: 600px) {
-        padding-top: variables.$spacer;
+        padding-top: variables.$spacer * 2;
         padding-left: 10px;
         padding-right: 10px;
     } 
