@@ -33,12 +33,12 @@
             <label for="menu-checkbox" class="menu__toggler">☰</label>
 
             <ul class="menu__list">
-                <li class="menu__item"><a href="/home/" class="menu__link" title="Sk8 film festival 2020">Home</a></li>
-                <li class="menu__item"><a href="/o-festivalu/" class="menu__link" title="O festivalu">O festivalu</a></li>
-                <li class="menu__item"><a href="/filmy/" class="menu__link" title="Filmy">Filmy</a></li>
-                <li class="menu__item"><a href="/hoste/" class="menu__link" title="Hosté">Hosté</a></li>
+                <li class="menu__item"><a href="/home/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'home'}}" title="Sk8 film festival 2020">Home</a></li>
+                <li class="menu__item"><a href="/o-festivalu/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'o-festivalu'}}" title="O festivalu">O festivalu</a></li>
+                <li class="menu__item"><a href="/filmy/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'filmy' or page.fileSlug === 'dire-skate' or page.fileSlug === 'propeller' or page.fileSlug === 'saturdays' or page.fileSlug === 'skate-of-mind' }}" title="Filmy">Filmy</a></li>
+                <li class="menu__item"><a href="/hoste/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'hoste'}}" title="Hosté">Hosté</a></li>
                 <li class="menu__item">
-                    <a href="/program/" class="menu__link" title="Program">Program</a>
+                    <a href="/program/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'program' or page.fileSlug === 'filmovy-program' or page.fileSlug === 'doprovodny-program' or page.fileSlug === 'rezervacni-formular' or page.fileSlug === 'rezervace-hlaska' }}" title="Program">Program</a>
                     <ul class="menu__submenu">
                         <li class="menu__item menu__item--sub">
                             <a href="/filmovy-program/" class="menu__link" title="Filmový program">Filmový program</a>
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="menu__item"><a href="/kontakt/" class="menu__link" title="Kontakt">Kontakt</a></li>
+                <li class="menu__item"><a href="/kontakt/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt'}}" title="Kontakt">Kontakt</a></li>
             </ul>
         </nav>
 
