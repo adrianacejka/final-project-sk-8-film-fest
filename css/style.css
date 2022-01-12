@@ -184,6 +184,11 @@ a:hover {
   padding: 15px;
 }
 .menu__link:hover {
+  border-bottom: 3px solid #347679;
+  color: #ffb007;
+}
+.menu__link--active {
+  border-bottom: 3px solid #347679;
   color: #ffb007;
 }
 .menu__checkbox {

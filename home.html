@@ -33,7 +33,8 @@
             <label for="menu-checkbox" class="menu__toggler">☰</label>
 
             <ul class="menu__list">
-                <li class="menu__item"><a href="/home/" class="menu__link" title="Sk8 film festival 2020">Home</a></li>
+                
+                <li class="menu__item"><a href="/home/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'home'}}" title="Sk8 film festival 2020">Home</a></li>
                 <li class="menu__item"><a href="/o-festivalu/" class="menu__link" title="O festivalu">O festivalu</a></li>
                 <li class="menu__item"><a href="/filmy/" class="menu__link" title="Filmy">Filmy</a></li>
                 <li class="menu__item"><a href="/hoste/" class="menu__link" title="Hosté">Hosté</a></li>
