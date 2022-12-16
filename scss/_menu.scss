@@ -45,12 +45,12 @@
   }
 
   &__link:hover {
-    border-bottom: 3px solid colors.$c-link;
+    border-bottom: 2px solid colors.$c-link;
     color: colors.$c-hover;
   }
 
   &__link--active {
-    border-bottom: 3px solid colors.$c-link;
+    border-bottom: 2px solid colors.$c-link;
     color: colors.$c-hover;
   }
 
