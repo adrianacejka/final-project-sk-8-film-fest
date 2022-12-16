@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@700&family=Cairo:wght@400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Oswald:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/style.css"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cabin:wght@700&family=Cairo:wght@400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Oswald:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>{{ title }}</title>
 </head>
+
 <body>
 
-   
-   
+
+
     <header class="header">
 
         <div class="socials">
-            <a class="socials__link" href="https://www.facebook.com/" title="Facebook"><img class="socials__icon" src="/images/facebook(1).png" alt="facebook"></a>
-            <a class="socials__link" href="https://www.instagram.com/" title="Instagram"><img class="socials__icon" src="/images/instagram(1).png" alt="instagram"></a>
-            <a class="socials__link" href="https://www.youtube.com/" title="YouTube"><img class="socials__icon" src="/images/youtube(1).png" alt="youtube"></a>
+            <a class="socials__link" href="https://www.facebook.com/" title="Facebook"><img class="socials__icon"
+                    src="/images/facebook(1).png" alt="facebook"></a>
+            <a class="socials__link" href="https://www.instagram.com/" title="Instagram"><img class="socials__icon"
+                    src="/images/instagram(1).png" alt="instagram"></a>
+            <a class="socials__link" href="https://www.youtube.com/" title="YouTube"><img class="socials__icon"
+                    src="/images/youtube(1).png" alt="youtube"></a>
         </div>
 
         <div class="logo">
@@ -31,24 +38,37 @@
 
             <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
             <label for="menu-checkbox" class="menu__toggler">☰</label>
-            
+
             <ul class="menu__list">
-                <li class="menu__item"><a href="/home/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'home'}}" title="Sk8 film festival 2020">Home</a></li>
-                <li class="menu__item"><a href="/o-festivalu/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'o-festivalu'}}" title="O festivalu">O festivalu</a></li>
-                <li class="menu__item"><a href="/filmy/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'filmy'}}" title="Filmy">Filmy</a></li>
-                <li class="menu__item"><a href="/hoste/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'hoste'}}" title="Hosté">Hosté</a></li>
+                <li class="menu__item"><a href="/home/"
+                        class="menu__link {{ 'menu__link--active' if page.fileSlug === 'home'}}"
+                        title="Sk8 film festival 2020">Home</a></li>
+                <li class="menu__item"><a href="/o-festivalu/"
+                        class="menu__link {{ 'menu__link--active' if page.fileSlug === 'o-festivalu'}}"
+                        title="O festivalu">O festivalu</a></li>
+                <li class="menu__item"><a href="/filmy/"
+                        class="menu__link {{ 'menu__link--active' if page.fileSlug === 'filmy'}}"
+                        title="Filmy">Filmy</a></li>
+                <li class="menu__item"><a href="/hoste/"
+                        class="menu__link {{ 'menu__link--active' if page.fileSlug === 'hoste'}}"
+                        title="Hosté">Hosté</a></li>
                 <li class="menu__item">
-                    <a href="/program/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'program' or page.fileSlug === 'filmovy-program' or page.fileSlug === 'doprovodny-program' or page.fileSlug === 'rezervacni-formular' or page.fileSlug === 'rezervace-hlaska' }}" title="Program">Program</a>
+                    <a href="/program/"
+                        class="menu__link {{ 'menu__link--active' if page.fileSlug === 'program' or page.fileSlug === 'filmovy-program' or page.fileSlug === 'doprovodny-program' or page.fileSlug === 'rezervacni-formular' or page.fileSlug === 'rezervace-hlaska' }}"
+                        title="Program">Program</a>
                     <ul class="menu__submenu">
                         <li class="menu__item menu__item--sub">
                             <a href="/filmovy-program/" class="menu__link" title="Filmový program">Filmový program</a>
                         </li>
                         <li class="menu__item menu__item--sub">
-                            <a href="/doprovodny-program" class="menu__link" title="Doprovodný program">Doprovodný program</a>
+                            <a href="/doprovodny-program" class="menu__link" title="Doprovodný program">Doprovodný
+                                program</a>
                         </li>
                     </ul>
                 </li>
-                <li class="menu__item"><a href="/kontakt/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt'}}" title="Kontakt">Kontakt</a></li>
+                <li class="menu__item"><a href="/kontakt/"
+                        class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt'}}"
+                        title="Kontakt">Kontakt</a></li>
             </ul>
         </nav>
 
@@ -65,27 +85,30 @@
                 <div class="hero-small__title">
                     <h1>SK8 Film Festival</h1>
                     <h2>Prague</h2>
-                </div>    
-            
+                </div>
+
             </div>
 
         </div>
 
 
 
-        <main class="main"> 
+        <main class="main">
 
-             {{ content | safe }}
+            {{ content | safe }}
 
-        </main>   
+        </main>
 
-        
+
     </div>
 
     <div class="socials-bottom">
-        <a class="socials-bottom__link" href="https://www.facebook.com/" title="Facebook"><img class="socials-bottom__icon" src="/images/facebook(1).png" alt="facebook"></a>
-        <a class="socials-bottom__link" href="https://www.instagram.com/" title="Instagram"><img class="socials-bottom__icon" src="/images/instagram(1).png" alt="instagram"></a>
-        <a class="socials-bottom__link" href="https://www.youtube.com/" title="YouTube"><img class="socials-bottom__icon" src="/images/youtube(1).png" alt="youtube"></a>
+        <a class="socials-bottom__link" href="https://www.facebook.com/" title="Facebook"><img
+                class="socials-bottom__icon" src="/images/facebook(1).png" alt="facebook"></a>
+        <a class="socials-bottom__link" href="https://www.instagram.com/" title="Instagram"><img
+                class="socials-bottom__icon" src="/images/instagram(1).png" alt="instagram"></a>
+        <a class="socials-bottom__link" href="https://www.youtube.com/" title="YouTube"><img
+                class="socials-bottom__icon" src="/images/youtube(1).png" alt="youtube"></a>
     </div>
 
     <div class="wave-container"></div>
@@ -93,24 +116,30 @@
     <footer class="footer">
 
         <div class="footer__statement">
-            
+
             <h4>Prohlášení autora | Author's statement</h4> <br>
 
-            <p>Webové stránky fiktivní akce - SK8 Film Festival - byly vytvořeny jako závěrečná práce pro účely kurzu Czechitas a nemají komerční charakter. Použité fotografie a texty jsou pouze ilustrační.</p>
-            <p>The website of the fictional event - SK8 Film Festival - was created as a final thesis for the purposes of the Czechitas course and is not of a commercial nature. The photographs and texts used are for illustrative purposes only.</p> <br>
+            <p>Webové stránky fiktivní akce - SK8 Film Festival - byly vytvořeny jako závěrečný projekt pro účely kurzu
+                Czechitas a nemají komerční charakter. Použité fotografie a texty jsou pouze ilustrační.</p>
+            <p>The website of the fictional event - SK8 Film Festival - was created as a final project for the purposes
+                of the Czechitas course and is not of a commercial nature. The photographs and texts used are for
+                illustrative purposes only.</p> <br>
             <p>Texts</p>
-            <p><a class="footer__link" href="https://www.redbull.com/cz-cs/skateboarding-urban-film-red-bull-tv-list-online-zdarma-top-17" title="Redbull">www.redbull.com/cz-cs</a></p>
+            <p><a class="footer__link"
+                    href="https://www.redbull.com/cz-cs/skateboarding-urban-film-red-bull-tv-list-online-zdarma-top-17"
+                    title="Redbull">www.redbull.com/cz-cs</a></p>
             <p>Photos</p>
             <p><a class="footer__link" href="https://unsplash.com/" title="Unsplash">www.unsplash.com</a></p>
             <p>Icons</p>
             <p><a class="footer__link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
-            
-        
-        </div>  
-    
+            <br>
+            <p>Návrh a kód: Adriana Čejka</p>
+
+        </div>
+
     </footer>
 
-    
+
 
 </body>
 
