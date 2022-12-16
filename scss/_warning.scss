@@ -1,30 +1,24 @@
-@use 'colors';
-@use 'typo';
-@use 'variables';
-
-
-
+@use "colors";
+@use "typo";
+@use "variables";
 
 .warning {
-    z-index: 999;
-    background-color: black;
-    opacity: 0.85;
-    width: 100%;
-    height: 100%;
-    // margin: variables.$spacer * 3 auto;
-    margin: 0 auto;
-    font-size: large;
-    color: white;
-    // padding: variables.$spacer * 2;
-    padding: 20%;
-    border-radius: 5px;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    text-align: center;
-
+  z-index: 999;
+  background-color: black;
+  opacity: 0.85;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  font-size: large;
+  color: white;
+  padding: 20%;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  text-align: center;
 }
 
 .button-warning {
-    margin-top: 60px;
+  margin-top: 60px;
 }
